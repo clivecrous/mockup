@@ -17,7 +17,7 @@
 require "rubygems"
 require 'hpricot'
 require "json"
-require "#{File.dirname(__FILE__)}/../symbols/balsamiq-control-defaults"
+require "mockup/symbols/balsamiq-control-defaults"
 
 class BalsamiqControl
   XML_PROPERTIES = 
