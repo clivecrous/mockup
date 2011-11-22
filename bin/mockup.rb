@@ -4,9 +4,9 @@
 # Copyright (c) 2009 Cory Ondrejka. All rights reserved.
 # See License.txt for licensing details.
 
-require "#{File.dirname(__FILE__)}/../lib/balsamiq/control"
-require "#{File.dirname(__FILE__)}/../lib/balsamiq/controlparser"
-require "#{File.dirname(__FILE__)}/../lib/balsamiq/options"
+require "mockup/balsamiq/control"
+require "mockup/balsamiq/controlparser"
+require "mockup/balsamiq/options"
 
 
 options = MockupOptions.new(ARGV)
