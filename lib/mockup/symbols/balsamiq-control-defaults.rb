@@ -49,6 +49,7 @@ class BalsamiqControl
   :NumericStepper => {:w => 41, :h => 26},
   :Paragraph => {:w => 200, :h => 140},
   :MediaControls => {:w => 111, :h => 35},
+  :PointyButton => {:w => 100, :h => 38 },
   :ProgressBar => {:w => 100, :h => 20},
   :RadioButton => {:w => 99, :h => 18},
   :Canvas => {:w => 100, :h => 70},
