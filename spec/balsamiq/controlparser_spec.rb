@@ -11,13 +11,13 @@
 
 
 unless Object.const_defined?("BalsamiqControl")
-  require "#{File.dirname(__FILE__)}/../../lib/balsamiq/control"
+  require "mockup/balsamiq/control"
 end
 unless Object.const_defined?("BalsamiqControlSymbols")
-  require "#{File.dirname(__FILE__)}/../../lib/symbols/balsamiq-control-symbols"
+  require "mockup/symbols/balsamiq-control-symbols"
 end
-require "#{File.dirname(__FILE__)}/../../lib/balsamiq/controlparser"
-require "#{File.dirname(__FILE__)}/../../lib/symbols/balsamiq-symbol-dump"
+require "mockup/balsamiq/controlparser"
+require "mockup/symbols/balsamiq-symbol-dump"
 
 TestHeader = 
 %Q{<mockup version="1.0" skin="sketch">
@@ -93,9 +93,9 @@ describe BalsamiqControlParser do
   it "should have a clean single call to use balsamiq-all-controls.xml to build " do
     @balsamiqcontrolparser = BalsamiqControlParser.new
     @balsamiqcontrolparser.process_examples("BalsamiqTestXML#{BalsamiqControlSymbols[0]}.xml", "temp")
-    File.exists?("#{File.dirname(__FILE__)}/../../lib/symbols/temp-defaults.rb").should == true
-    File.exists?("#{File.dirname(__FILE__)}/../../lib/symbols/temp-symbols.rb").should == true
-    File.delete("#{File.dirname(__FILE__)}/../../lib/symbols/temp-defaults.rb").should == 1
-    File.delete("#{File.dirname(__FILE__)}/../../lib/symbols/temp-symbols.rb").should == 1
+    File.exists?("#{File.dirname(__FILE__)}/../../lib/mockup/symbols/temp-defaults.rb").should == true
+    File.exists?("#{File.dirname(__FILE__)}/../../lib/mockup/symbols/temp-symbols.rb").should == true
+    File.delete("#{File.dirname(__FILE__)}/../../lib/mockup/symbols/temp-defaults.rb").should == 1
+    File.delete("#{File.dirname(__FILE__)}/../../lib/mockup/symbols/temp-symbols.rb").should == 1
   end
 end

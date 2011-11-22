@@ -1,8 +1,3 @@
-source :rubygems
+source "http://rubygems.org"
 
-gem 'hpricot'
-
-group :development do
-  gem 'rake'
-  gem 'rspec'
-end
+gemspec

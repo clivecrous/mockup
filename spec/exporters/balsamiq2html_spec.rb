@@ -4,18 +4,18 @@
 # See License.txt for licensing details.
 
 unless Object.const_defined?("BalsamiqControl")
-  require "#{File.dirname(__FILE__)}/../../lib/balsamiq/control"
+  require "mockup/balsamiq/control"
 end
 
 unless Object.const_defined?("BalsamiqControlParser")
-  require "#{File.dirname(__FILE__)}/../../lib/balsamiq/controlparser"
+  require "mockup/balsamiq/controlparser"
 end
 
 unless Object.const_defined?("BalsamiqControlSymbols")
-  require "#{File.dirname(__FILE__)}/../../lib/symbols/balsamiq-control-symbols"
+  require "mockup/symbols/balsamiq-control-symbols"
 end
 
-require "#{File.dirname(__FILE__)}/../../lib/exporters/balsamiq2html"
+require "mockup/exporters/balsamiq2html"
 
 
 describe BalsamiqExportHTML do

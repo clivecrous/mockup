@@ -4,7 +4,7 @@
 # Copyright (c) 2009 Cory Ondrejka. All rights reserved.
 # See License.txt for licensing details.
 
-require "#{File.dirname(__FILE__)}/../../lib/balsamiq/options"
+require "mockup/balsamiq/options"
 
 MockupOptionHelp = <<-EOF
 Usage: mockup [ options ]
